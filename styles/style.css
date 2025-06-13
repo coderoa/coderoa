@@ -1,0 +1,143 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #023c83;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+
+}
+
+ul{
+    list-style: none;
+}
+
+header, main, footer{
+    padding: 20px;
+}
+
+header{
+    background-color: rgb(31, 41, 55);
+    color: white;
+}
+
+nav ul{
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav a{
+    color: white;
+    font-weight: bold;
+    transition: color 0.3 ease;
+}
+
+nav a:hover{
+    color: rgb(96, 165, 250);
+}
+
+#lesson{
+    width: 100%;
+    color:  rgb(255, 255, 255);
+}
+#lesson h2{
+    justify-content: center;
+    margin-bottom: 1em;
+}
+
+#lesson iframe{
+    justify-content: center;
+    border-radius: 10px;
+    margin-bottom: 1em;
+}
+
+
+.player{
+    margin-top: 1em;
+    aspect-ratio: 16/9;
+    width: 100%;
+}
+
+#question form{
+    display: flex;
+}
+
+
+
+.q-area{
+    background-color: #3155808c;
+    color: rgb(194, 223, 208);
+    padding: 0.5em;
+    border-radius: 10px;
+    border: 2px solid transparent;
+    outline: none;
+    font-weight: 400;
+    line-height: 1.3;
+    font-size: 16px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    transition: all 0.2s;
+    
+    
+    
+    width: 100%;
+    height: 2em;
+    margin-top: 1em;
+    font-size: 1.4em;
+    position: relative;
+}
+
+.q-area:hover{
+    cursor: pointer;
+    background-color: #05264b4b;
+
+}
+
+.q-area:focus{
+    pointer-events: text;
+    color: rgb(202, 195, 195);
+    background-color: rgba(2, 19, 31, 0.418);
+    height: 7em;
+}
+
+.send{
+    display: flex;
+    flex-direction: column-reverse;
+    background-color: #023c83;
+    border: none;
+    color: white;
+    margin: 4px;
+    transition: all 0.2s;
+}
+
+.send:hover{
+    color: black;
+    size: 2em;
+}
+
+aside{
+    display: none;
+}
+
+.others, aside{
+    padding: 10px;
+    margin: 5px;
+    color: rgb(240, 231, 231);
+
+}
+
+.one-lesson{
+    margin-bottom: 9px;
+}
+
+footer{
+    display: flex;
+    justify-content: center;
+}
