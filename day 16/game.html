@@ -1,53 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>The Game</title>
-    <link rel="stylesheet" href="styles/style.css">
-</head>
-<body>
-<header class="header">
-    <nav>
+    <link rel="stylesheet" href="styles/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav>
         <ul>
-        <li><a href="/index.html">Home</a></li>
-        <li><a href="">About</a></li>
-        <li><a href="">Lessons</a></li>
-        <li><a href="#">Game</a></li>
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="">About</a></li>
+          <li><a href="">Lessons</a></li>
+          <li><a href="#">Game</a></li>
         </ul>
-    </nav>
-</header>
-<div class="game">
-    <div class="result">
+      </nav>
+    </header>
+    <div class="game">
+      <div class="result">
         <div>
-            <span>You</span>
-            <p id="Presult">0</p>
+          <span>You</span>
+          <p id="Presult">0</p>
         </div>
         <div>
-            <span>Computer</span>
-            <p id="Cresult">0</p>
+          <span>Computer</span>
+          <p id="Cresult">0</p>
         </div>
-    </div>
-    <div class="visual">
+      </div>
+      <div class="visual">
         <div>
-            <span id="Pchoice"></span>
-            <p id="Pname">choose</p>
+          <span id="Pchoice"></span>
+          <p id="Pname">choose</p>
         </div>
         <div>
-            <span id="Cchoice"></span>
-            <p id="Cname">....</p>
+          <span id="Cchoice"></span>
+          <p id="Cname">....</p>
         </div>
-    </div>
-    <div class="choices">
+      </div>
+      <div class="choices">
         <button onclick="rock()">👊</button>
         <button onclick="paper()">🖐</button>
         <button onclick="scissors()">✌</button>
+      </div>
     </div>
-</div>
 
-
-<script src="main.js"></script>
-
-
-</body>
+    <script src="main.js"></script>
+  </body>
 </html>
