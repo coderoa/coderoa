@@ -17,6 +17,7 @@ function Crun() {
 console.log(Crun());
 
 function rock() {
+        reset();
         rounds++;
         clicksound("./audios/click.mp3");
         PlayerChoice.textContent = "👊";
@@ -39,6 +40,7 @@ function rock() {
 }
 
 function paper() {
+            reset();
             rounds++;
             clicksound("./audios/click.mp3");
             PlayerChoice.textContent = "🖐";
@@ -62,6 +64,7 @@ function paper() {
 }
 
 function scissors() {
+        reset();
         rounds++;
         clicksound("./audios/click.mp3");
         PlayerChoice.textContent = "✌";
@@ -108,7 +111,6 @@ function clicksound(url) {
 
 function finalresults() {
   if (PlayerScore > ComputerScore) {
-    clicksound("./audios/win.mp3");
     document.body.style.background = "green";
     PlayerChoice.textContent = PlayerScore;
     ComputerChoice.textContent = ComputerScore;
@@ -116,7 +118,6 @@ function finalresults() {
     PlayerScore = 0;
     ComputerScore = 0;
   } else {
-    clicksound("./audios/lose.mp3");
     document.body.style.background = "red";
     PlayerChoice.textContent = PlayerScore;
     ComputerChoice.textContent = ComputerScore;
@@ -130,5 +131,13 @@ rounds = 0;
 function isfinal(rounds) {
   if (rounds === 10) {
     finalresults();
+  }
+}
+
+function reset(){
+  if (!Number.isInteger(Number(PlayerRes.value))){
+    PlayerRes.textContent = PlayerScore;
+    ComputerRes.textContent = ComputerScore;
+    document.body.style.background = ""
   }
 }

@@ -1,0 +1,42 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    min-height: 100vh;
+}
+
+.quote{
+    font-size: 1.2em;
+    background-color: gold;
+    color: black;
+    font-weight: 600;
+    font-family:'Times New Roman', Times, serif;
+    padding: 1em;
+    margin:1em;
+    box-shadow: 2px 2px 5px gold;
+    position: relative;
+
+}
+
+
+.author{
+    font-size: 1.2em;
+    color: rgb(50, 14, 133);
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.author svg{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    margin: 10px;
+}
+.author svg:hover{
+    fill: white;
+}
+.author svg:active{
+    fill: rgb(14, 14, 14);
+}
