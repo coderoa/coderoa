@@ -20,10 +20,10 @@ const text = document.getElementById("text");
 const author = document.getElementById("author")
 
 async function showQuote() {
-    data = await fetchdata("https://zenquotes.io/api/random");
+    data =  await fetchdata("https://thequoteshub.com/api/");
     if (data){
-        text.textContent = data.q || "No text found";
-        author.textContent = data.a || "Unknown";
+        text.textContent = data.text || "No text found";
+        author.textContent = data.author || "Unknown";
 
     }  
 }
